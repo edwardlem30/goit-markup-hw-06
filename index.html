@@ -79,6 +79,42 @@
 									<use href="./images/icons.svg#icon-close"></use>
 								</svg>
 							</button>
+							<form action="message" method="post">
+								<p class="title">Оставьте свои данные, мы вам перезвоним</p>
+								<ul class="backdrop-list list">
+									<li class="backdrop-item">
+										<label for="name">Имя</label>
+										<input type="text" id="name" name="user_name" />
+									</li>
+									<li class="backdrop-item">
+										<label for="tell">Телефон</label>
+										<input type="text" id="tell" name="user_tell" />
+									</li>
+									<li class="backdrop-item">
+										<label for="mail">Почта</label>
+										<input type="email" id="mail" name="user_email" />
+									</li>
+									<li class="backdrop-item">
+										<label for="msg">Коментарий</label>
+										<textarea id="msg" name="user_message"></textarea>
+									</li>
+								</ul>
+								<div class="form-field">
+									<input
+										type="checkbox"
+										class="check-input"
+										name="hobby"
+										value="sports"
+										id="sports"
+										width="16"
+										height="15"
+									/>
+									<label class="form-label" for="sports">
+										Соглашаюсь с рассылкой и принимаю
+										<a href="">Условия договора</a>
+									</label>
+								</div>
+							</form>
 						</div>
 					</div>
 				</div>
@@ -523,6 +559,20 @@
 						</li>
 					</ul>
 				</div>
+				<form class="form">
+					<strong class="form-write">подпишитесь на рассылку</strong>
+					<div class="mail-btn">
+						<label class="form-label">
+							<input type="email" class="form-input" name="mail" placeholder="E-mail" />
+						</label>
+						<div class="glider">
+							<button class="footer-btn primary" type="submit">подписаться</button>
+							<svg class="glider-send">
+								<use href="./images/icons.svg#icon-send"></use>
+							</svg>
+						</div>
+					</div>
+				</form>
 			</div>
 		</footer>
 		<script src="./js/modal.js"></script>

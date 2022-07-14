@@ -19,6 +19,7 @@
 			referrerpolicy="no-referrer"
 		/>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css" />
 		<link rel="stylesheet" href="./styles/styles.css" />
 	</head>
 	<body>
@@ -99,21 +100,18 @@
 										<textarea id="msg" name="user_message"></textarea>
 									</li>
 								</ul>
-								<div class="form-field">
-									<input
-										type="checkbox"
-										class="check-input"
-										name="hobby"
-										value="sports"
-										id="sports"
-										width="16"
-										height="15"
-									/>
-									<label class="form-label" for="sports">
+								<label class="form-checkbox">
+									<input type="checkbox" name="user-agreement" checked />
+									<span>
+										<svg width="16" height="15">
+											<use href="./images/icons.svg#icon-checkbox"></use>
+										</svg>
+									</span>
+									<span>
 										Соглашаюсь с рассылкой и принимаю
 										<a href="">Условия договора</a>
-									</label>
-								</div>
+									</span>
+								</label>
 							</form>
 						</div>
 					</div>
@@ -575,6 +573,8 @@
 				</form>
 			</div>
 		</footer>
+		<script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+		<script src="./js/header-scroll.js"></script>
 		<script src="./js/modal.js"></script>
 	</body>
 </html>

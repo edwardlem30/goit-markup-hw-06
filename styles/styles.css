@@ -387,26 +387,23 @@ h3 {margin-bottom: 10px;}
     height: 11px;
 }
 
-.backdrop-list
-{
+.backdrop-list {
     margin-top: 40px;
     margin-right: 39px;
     margin-left: 41px;
 }
-.backdrop-item
-{
+
+.backdrop-item {
     min-width: 448px;
-    
+
     justify-content: flex-start;
 }
 
-.backdrop-item:not(:last-child)
-{
+.backdrop-item:not(:last-child) {
     margin-bottom: 10px;
 }
 
-.title
-{
+.title {
     margin-top: 40px;
     margin-right: 39px;
     margin-left: 41px;
@@ -992,7 +989,7 @@ strong
 
 .form-write
 {
-    margin-bottom: 5px;
+    margin-bottom: 20px;
 
     font-family: 'Roboto';
     font-style: normal;
@@ -1003,6 +1000,13 @@ strong
     text-transform: uppercase;
 
     color: #FFFFFF;
+}
+
+.form-field
+{
+    display: flex;
+    align-items: center;
+    justify-content: left;
 }
 
 .mail-btn
@@ -1055,7 +1059,7 @@ strong
 
 .footer-btn.primary
 {
-    margin-top: 30px;
+    
     color: var(--bcg-color);
     background-color: var(--accent-txt-color);
     box-shadow: 0px 3px 1px rgb(0 0 0 / 10%), 0px 1px 2px rgb(0 0 0 / 8%), 0px 2px 2px rgb(0 0 0 / 12%);
@@ -1072,7 +1076,7 @@ strong
 .glider-send {
     position: absolute;
     content: '';
-    top: 55%;
+    top: 30%;
     right: 8%;
     display: block;
     fill: #FFFFFF;

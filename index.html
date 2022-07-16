@@ -84,34 +84,40 @@
 								<p class="title">Оставьте свои данные, мы вам перезвоним</p>
 								<ul class="backdrop-list list">
 									<li class="backdrop-item">
-										<label for="name">Имя</label>
-										<input type="text" id="name" name="user_name" />
+										<label for="user_name" class="backdrop-label">Имя</label>
+										<input class="backdrop-input" type="text" id="user_name" name="user_name" />
+										<svg class="form-icon" width="18" height="18">
+											<use href="./images/icons.svg#icon-person"></use>
+										</svg>
 									</li>
 									<li class="backdrop-item">
-										<label for="tell">Телефон</label>
-										<input type="text" id="tell" name="user_tell" />
+										<label for="user_phone" class="backdrop-label">Телефон</label>
+										<input class="backdrop-input" type="text" id="user-phone" name="user_phone" />
+										<svg class="form-icon" width="18" height="18">
+											<use href="./images/icons.svg#icon-phone"></use>
+										</svg>
 									</li>
 									<li class="backdrop-item">
-										<label for="mail">Почта</label>
-										<input type="email" id="mail" name="user_email" />
+										<label for="user_email" class="backdrop-label">Почта</label>
+										<input class="backdrop-input" type="text" id="user_email" name="user_email" />
+										<svg class="form-icon" width="18" height="18">
+											<use href="./images/icons.svg#icon-email"></use>
+										</svg>
 									</li>
 									<li class="backdrop-item">
 										<label for="msg">Коментарий</label>
 										<textarea id="msg" name="user_message"></textarea>
 									</li>
 								</ul>
-								<label class="form-checkbox">
+								<label class="checkbox">
 									<input type="checkbox" name="user-agreement" checked />
-									<span>
-										<svg width="16" height="15">
-											<use href="./images/icons.svg#icon-checkbox"></use>
-										</svg>
-									</span>
-									<span>
+
+									<span class="checkbox-text">
 										Соглашаюсь с рассылкой и принимаю
 										<a href="">Условия договора</a>
 									</span>
 								</label>
+								<button class="form-button primary">Заказать услугу</button>
 							</form>
 						</div>
 					</div>
@@ -557,20 +563,18 @@
 						</li>
 					</ul>
 				</div>
-				<form class="form">
-					<strong class="form-write">подпишитесь на рассылку</strong>
-					<div class="mail-btn">
-						<label class="form-label">
-							<input type="email" class="form-input" name="mail" placeholder="E-mail" />
-						</label>
-						<div class="glider">
-							<button class="footer-btn primary" type="submit">подписаться</button>
-							<svg class="glider-send">
+				<div class="form">
+					<p class="form-write">подпишитесь на рассылку</p>
+					<form class="register">
+						<input type="email" class="register-input" name="mail" placeholder="E-mail" />
+						<button class="footer-btn primary" type="submit">
+							подписаться
+							<svg class="glider-send animate__animated animate__fadeInBottomLeft">
 								<use href="./images/icons.svg#icon-send"></use>
 							</svg>
-						</div>
-					</div>
-				</form>
+						</button>
+					</form>
+				</div>
 			</div>
 		</footer>
 		<script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
